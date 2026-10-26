@@ -55,3 +55,4 @@ dmypy.json
 *.log
 *.tmp
 .DS_Store
+site/
