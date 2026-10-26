@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "xberg-ocr"
+version = "0.1.0"
+description = "Lightweight OCR server using FastAPI and xberg VLMOCR with Ollama"
+authors = ["Michael Wittmann <michael.wittmann@tum.de>"]
+readme = "README.md"
+license = "MIT"
+packages = [{include = "xberg_ocr", from = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = "^0.104.1"
+uvicorn = {extras = ["standard"], version = "^0.24.0"}
+python-multipart = "^0.0.6"
+xberg = "^1.0.0"
+pydantic-settings = "^2.1.0"
+python-dotenv = "^1.0.0"
+pypdf = "^3.17.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.3"
+pytest-asyncio = "^0.21.1"
+httpx = "^0.25.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
