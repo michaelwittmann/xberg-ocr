@@ -13,7 +13,8 @@ class Settings(BaseSettings):
     )
 
     ollama_base_url: str = "http://localhost:11434"
-    vlm_model: str = "glm-ocr"
+    ollama_api_key: str | None = None
+    vlm_model: str = "glm-ocr:latest"
     host: str = "0.0.0.0"
     port: int = 8000
 

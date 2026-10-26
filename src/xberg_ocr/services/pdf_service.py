@@ -2,7 +2,7 @@
 
 import io
 
-from xberg import extract, ExtractInput, ExtractionConfig, OcrConfig, VlmConfig
+from xberg import extract, ExtractInput, ExtractionConfig, OcrConfig, LlmConfig
 from pypdf import PdfReader, PdfWriter
 
 from ..config import settings
@@ -16,9 +16,10 @@ class PDFService:
         self.config = ExtractionConfig(
             ocr=OcrConfig(
                 backend="vlm",
-                vlm_config=VlmConfig(
+                vlm_config=LlmConfig(
                     model=settings.vlm_model,
                     base_url=settings.ollama_base_url,
+                    api_key=settings.ollama_api_key,
                 ),
             ),
             force_ocr=True,

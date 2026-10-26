@@ -1,8 +1,10 @@
 """Tests for API endpoints."""
 
+import io
 import pytest
 from fastapi.testclient import TestClient
 from unittest.mock import patch, AsyncMock, Mock
+from pypdf import PdfWriter
 
 from src.xberg_ocr.main import app
 
@@ -13,10 +15,18 @@ def client():
     return TestClient(app)
 
 
+def _make_minimal_pdf() -> bytes:
+    w = PdfWriter()
+    w.add_blank_page(width=612, height=792)
+    buf = io.BytesIO()
+    w.write(buf)
+    return buf.getvalue()
+
+
 @pytest.fixture
 def sample_pdf_file():
     """Fixture for sample PDF file upload."""
-    return ("test.pdf", b"%PDF-1.4\n%mock pdf", "application/pdf")
+    return ("test.pdf", _make_minimal_pdf(), "application/pdf")
 
 
 def test_root_endpoint(client):
