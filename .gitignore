@@ -48,8 +48,8 @@ htmlcov/
 .dmypy.json
 dmypy.json
 
-# Poetry
-poetry.lock
+# Poetry - lock file should be committed for applications
+# poetry.lock
 
 # Temporary files
 *.log
