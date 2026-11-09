@@ -11,7 +11,7 @@ packages = [{include = "xberg_ocr", from = "src"}]
 python = "^3.13"
 fastapi = "^0.162.0"
 uvicorn = {extras = ["standard"], version = "^0.54.0"}
-python-multipart = "^0.0.32"
+python-multipart = ">=0.0.32,<0.0.34"
 xberg = "^1.0.0"
 pydantic-settings = "^2.1.0"
 python-dotenv = "^1.0.0"
