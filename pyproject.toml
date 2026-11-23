@@ -9,9 +9,9 @@ packages = [{include = "xberg_ocr", from = "src"}]
 
 [tool.poetry.dependencies]
 python = "^3.13"
-fastapi = "^0.162.0"
+fastapi = ">=0.162,<0.166"
 uvicorn = {extras = ["standard"], version = "^0.54.0"}
-python-multipart = ">=0.0.32,<0.0.34"
+python-multipart = ">=0.0.32,<0.0.35"
 xberg = "^1.0.0"
 pydantic-settings = "^2.1.0"
 python-dotenv = "^1.0.0"
@@ -21,7 +21,7 @@ pypdf = ">=3.17,<8.0"
 pytest = ">=7.4.3,<10.0.0"
 pytest-asyncio = ">=0.21.1,<1.6.0"
 httpx = ">=0.25.2,<0.29.0"
-mkdocs-material = "9.8.1"
+mkdocs-material = "9.8.2"
 
 [build-system]
 requires = ["poetry-core"]

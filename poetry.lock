@@ -298,14 +298,14 @@ files = [
 
 [[package]]
 name = "fastapi"
-version = "0.162.5"
+version = "0.165.0"
 description = "FastAPI framework, high performance, easy to learn, fast to code, ready for production"
 optional = false
-python-versions = ">=3.10"
+python-versions = ">=3.11"
 groups = ["main"]
 files = [
-    {file = "fastapi-0.162.5-py3-none-any.whl", hash = "sha256:5303c67415fde762889ca337db79d27b755b8bd09cef314fa7a4340bb30bfd2b"},
-    {file = "fastapi-0.162.5.tar.gz", hash = "sha256:1ca37f64f61c99cebd38636e67525fb721c5e8c1169f07f2a35d73b0a63265d4"},
+    {file = "fastapi-0.165.0-py3-none-any.whl", hash = "sha256:896f48462042bb4f162147eb8fac7e858753dc1f486765709baf105d70e4fc5b"},
+    {file = "fastapi-0.165.0.tar.gz", hash = "sha256:dd94d4128319c1e1d50535ab023ab698f850a4d2822f0e181747b46f4ff3c0ab"},
 ]
 
 [package.dependencies]
@@ -313,7 +313,7 @@ annotated-doc = ">=0.0.2"
 anyio = ">=4.1.0"
 opentelemetry-api = ">=1.44.0"
 pydantic = ">=2.9.0"
-starlette = ">=0.46.0"
+starlette = ">=1.6.0"
 typing-extensions = ">=4.8.0"
 typing-inspection = ">=0.4.2"
 
@@ -812,14 +812,14 @@ pyyaml = ">=5.1"
 
 [[package]]
 name = "mkdocs-material"
-version = "9.8.1"
+version = "9.8.2"
 description = "Documentation that simply works"
 optional = false
 python-versions = ">=3.11"
 groups = ["dev"]
 files = [
-    {file = "mkdocs_material-9.8.1-py3-none-any.whl", hash = "sha256:2115af67ee680e1398bdd0ea02e517721e4bba88b342503a93f97ea8eb3de51c"},
-    {file = "mkdocs_material-9.8.1.tar.gz", hash = "sha256:cddae7d77bb98d1d347aa68ee252ab40926171a1b34ba8777c44e16de9629f00"},
+    {file = "mkdocs_material-9.8.2-py3-none-any.whl", hash = "sha256:ef1414cab33d64fcc13387e972af5ba4620f55f93482d1842933399ed2c69b02"},
+    {file = "mkdocs_material-9.8.2.tar.gz", hash = "sha256:005d942bdbfa22efa049f4818c31d42fb36bed6d362adb641dd7a2e948078f9d"},
 ]
 
 [package.dependencies]
@@ -1110,14 +1110,14 @@ typing-extensions = ">=4.16.0"
 
 [[package]]
 name = "pydantic-settings"
-version = "2.16.2"
+version = "2.16.3"
 description = "Settings management using Pydantic"
 optional = false
 python-versions = ">=3.11"
 groups = ["main"]
 files = [
-    {file = "pydantic_settings-2.16.2-py3-none-any.whl", hash = "sha256:8d523e5c129b097686bde019bd6109bff53f4c8c3f63f1ddf9933ffa42e5ab4f"},
-    {file = "pydantic_settings-2.16.2.tar.gz", hash = "sha256:3dc08ffabed2bbd5dc2dd55ead7b78b4e4c5cd776aecd04310db5f1224caaf46"},
+    {file = "pydantic_settings-2.16.3-py3-none-any.whl", hash = "sha256:d1db16a2d34006323a1b42c0640898da58adfbad7ec30baaa9e2b18aafc08999"},
+    {file = "pydantic_settings-2.16.3.tar.gz", hash = "sha256:10e36f616623ebb586c05ca3d3cd22927146869db413d4f14c20c514442a1337"},
 ]
 
 [package.dependencies]
@@ -1169,14 +1169,14 @@ extra = ["pygments (>=2.19.1)"]
 
 [[package]]
 name = "pypdf"
-version = "7.0.1"
+version = "7.1.1"
 description = "A pure-python PDF library capable of splitting, merging, cropping, and transforming PDF files"
 optional = false
 python-versions = ">=3.10"
 groups = ["main"]
 files = [
-    {file = "pypdf-7.0.1-py3-none-any.whl", hash = "sha256:6131b764b046282357037309e7ef2a1b7679d4a5c53eed3db2bfbf7c673ddc2b"},
-    {file = "pypdf-7.0.1.tar.gz", hash = "sha256:0a78bb99efb41e9088260e9a8e5da134a5cbb9a322014744177bf29b5267ea6d"},
+    {file = "pypdf-7.1.1-py3-none-any.whl", hash = "sha256:04c5680d4b4cfa04ab505b09393fc949860c34a4dad6565284d11a2f5c3ce8b1"},
+    {file = "pypdf-7.1.1.tar.gz", hash = "sha256:2eff4e2fc5fb22a6d6711e6f1166cdc9ab5765d90cd0d77dfea3f4aa91a27b1d"},
 ]
 
 [package.extras]
@@ -1264,14 +1264,14 @@ cli = ["click (>=5.0)"]
 
 [[package]]
 name = "python-multipart"
-version = "0.0.33"
+version = "0.0.34"
 description = "A streaming multipart parser for Python"
 optional = false
 python-versions = ">=3.11"
 groups = ["main"]
 files = [
-    {file = "python_multipart-0.0.33-py3-none-any.whl", hash = "sha256:8f16c07b36add9da6b2ee87d3efcaf0a45a6de9c3d0a5dd94e9ccf7675a7bc45"},
-    {file = "python_multipart-0.0.33.tar.gz", hash = "sha256:b8112424a6abd162ec08d390565dd113ad699f2fe6fef3c987b8bbcbfe9e390d"},
+    {file = "python_multipart-0.0.34-py3-none-any.whl", hash = "sha256:ebacd224bd686eee2f9aa1066a657affe07435a185834e05e5235e2e59173e91"},
+    {file = "python_multipart-0.0.34.tar.gz", hash = "sha256:b998ae90ca6e1e363261ce2e0e230281b8af53867b757970abd69ee9edcd843a"},
 ]
 
 [[package]]
@@ -1856,4 +1856,4 @@ files = [
 [metadata]
 lock-version = "2.1"
 python-versions = "^3.13"
-content-hash = "1418541a046aacd787de514a1a42db25959e283c5575a17761c0c8477a0fed32"
+content-hash = "8c73e3574745c9b1545efbaeceddf12addcf8e18a1639231394f7b2644eb6241"
